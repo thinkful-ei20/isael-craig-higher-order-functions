@@ -5,9 +5,9 @@ function reducer(str){
     let newString = '';
     let result = str.split(" ");
     
-    result.reduce((allNames, names) => {
-        if(allNames !== undefined){
-            newString += allNames[allNames.length-1].toUpperCase();
+    result.reduce((firstName, names) => {
+        if(firstName !== undefined){
+            newString += firstName[firstName.length-1].toUpperCase();
         }
         if(names.length === 3){
             newString += " ";
