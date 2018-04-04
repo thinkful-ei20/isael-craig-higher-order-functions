@@ -4,7 +4,7 @@ function warningCounter(typeOfWarning){
     return (location) => {
         warningCounter++;
         console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}`);
-        console.log(`The ${typeOfWarning} hazard has triggered ${warningCounter} time(s) today!`);
+        console.log(`The ${typeOfWarning} hazard has triggered ${warningCounter} time${warningCounter === 1 ? "" : "(s)"} today!`);
     };
 }
 const rockWarnings = warningCounter("Rock Warnings");
